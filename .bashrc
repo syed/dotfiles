@@ -135,13 +135,11 @@ function r ()
 {
  su -c "$*"
 }
-#auto completion 
-if [ -f /etc/bash_completion ] ; then 
-	/etc/bash_completion
-fi
 export EDITOR=vim
 export PATH=$PATH:~/bin/depot_tools
+export PATH=$PATH:~/bin
 export  PATH=$PATH:~/Downloads/pydev/Aptana\ Studio\ 3
+export PYTHONPATH=$PYTHONPATH:~/coi/conflict-mapper
 
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
