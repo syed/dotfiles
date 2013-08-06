@@ -68,11 +68,6 @@ alias 755='chmod 755'
 
 # more
 
-alias p4v='/home/syedah/Downloads/p4v-2010.1.276058/bin/p4v'
-alias wf='cd /home/syedah/prog/py/WordFlash && ./WordFlash.py'
-alias ws='/home/syedah/soft/wireshark-1.6.2/wireshark'
-alias gdb='cgdb'
-
 alias gcm="git commit"
 alias gpl="git pull"
 alias gps="git push"
@@ -83,7 +78,7 @@ alias gdf="git diff"
 alias gdiff="git diff"
 
 
-alias visa="python ~/prog/py/misc/check_visa_status.py"
+alias mk='make clean;make'
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
@@ -139,7 +134,7 @@ export EDITOR=vim
 export PATH=$PATH:~/bin/depot_tools
 export PATH=$PATH:~/bin
 export  PATH=$PATH:~/Downloads/pydev/Aptana\ Studio\ 3
-export PYTHONPATH=$PYTHONPATH:~/coi/conflict-mapper
+export PYTHONPATH=$PYTHONPATH:~/work/coi/conflict-mapper
 
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
@@ -151,3 +146,11 @@ P4USER=syedah
 P4PORT=10.102.1.5:1999
 P4CONFIG=.p4config
 
+# JAVA stuff 
+export JAVA_HOME='/usr/lib/jvm/java-7-oracle/'
+export CATALINA_HOME=/home/syed/soft/apache-tomcat-6.0.33/
+export CATALINA_BASE=/home/syed/soft/apache-tomcat-6.0.33/
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
+
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
