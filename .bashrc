@@ -131,14 +131,12 @@ function r ()
  su -c "$*"
 }
 export EDITOR=vim
-export PATH=$PATH:~/bin/depot_tools
 export PATH=$PATH:~/bin
-export  PATH=$PATH:~/Downloads/pydev/Aptana\ Studio\ 3
 export PYTHONPATH=$PYTHONPATH:~/work/coi/conflict-mapper
 
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 #p4 stuff
 P4DIFF=vimdiff
@@ -147,10 +145,14 @@ P4PORT=10.102.1.5:1999
 P4CONFIG=.p4config
 
 # JAVA stuff 
-export JAVA_HOME='/usr/lib/jvm/java-7-oracle/'
+export JAVA_HOME='/usr/lib/jvm/jdk1.7.0_25/'
 export CATALINA_HOME=/home/syed/soft/apache-tomcat-6.0.33/
 export CATALINA_BASE=/home/syed/soft/apache-tomcat-6.0.33/
 export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/soft/idea-IC-129.713/bin/ # Path for idea
+
+export GINI_HOME=$HOME/gini
+export PATH=$PATH:$GINI_HOME/bin
