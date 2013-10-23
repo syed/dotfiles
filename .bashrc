@@ -96,7 +96,7 @@ alias mk='make clean;make'
 #Background colors: 40=black;41=red;42=green;43=red;44=blue;45=magenta;46=cyan;47=white;48=?;49=black(default);
 
 # Comment in the above and uncomment this below for a color prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w\[\033[00m\] \$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w\[\033[00m\] $(parse_git_branch)\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -130,6 +130,11 @@ function r ()
 {
  su -c "$*"
 }
+
+function parse_git_branch {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+}
+
 export EDITOR=vim
 export PATH=$PATH:~/bin
 export PYTHONPATH=$PYTHONPATH:~/work/coi/conflict-mapper
@@ -153,6 +158,8 @@ export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/soft/idea-IC-129.713/bin/ # Path for idea
+PATH=$PATH:$HOME/soft/pycharm-community-3.0.1/bin # Path for pycharm
+PATH=$PATH:/usr/lib/ssl/misc/
 
 export GINI_HOME=$HOME/gini
 export PATH=$PATH:$GINI_HOME/bin

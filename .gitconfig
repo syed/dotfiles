@@ -41,9 +41,9 @@
 		--abbrev-commit --date=relative
 
 [pager]
-	diff = 
+	diff = less
 [diff]
-		external = git_diff_wrapper
+        external = git_diff_wrapper
 
 
 [giggle]
