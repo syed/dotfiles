@@ -6,7 +6,6 @@
 
 # don't put duplicate lines in the history. See bash(1) for more options
 export HISTCONTROL=ignoredups
-export JAVA_HOME=/usr/lib/jvm/java-6-sun/
 export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
 
 # check the window size after each command and, if necessary,
@@ -150,7 +149,7 @@ P4PORT=10.102.1.5:1999
 P4CONFIG=.p4config
 
 # JAVA stuff 
-export JAVA_HOME='/usr/lib/jvm/jdk1.7.0_25/'
+export JAVA_HOME='/usr/lib/jvm/jdk1.7.0_45/'
 export CATALINA_HOME=/home/syed/soft/apache-tomcat-6.0.33/
 export CATALINA_BASE=/home/syed/soft/apache-tomcat-6.0.33/
 export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
@@ -160,6 +159,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/soft/idea-IC-129.713/bin/ # Path for idea
 PATH=$PATH:$HOME/soft/pycharm-community-3.0.1/bin # Path for pycharm
 PATH=$PATH:/usr/lib/ssl/misc/
+PATH=$PATH:/usr/lib/jvm/jdk1.7.0_45/bin
 
 export GINI_HOME=$HOME/gini
 export PATH=$PATH:$GINI_HOME/bin
