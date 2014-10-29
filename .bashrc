@@ -46,7 +46,6 @@ alias upgrade='sudo apt-get upgrade'
 alias install='sudo apt-get install'
 alias remove='sudo apt-get remove'
 alias eclipse='eclipse -vmargs -Xmx512M'
-alias firefox='firefox-3.5'
 alias ipconfig='ifconfig -a'
 
 # Some ssh connections
