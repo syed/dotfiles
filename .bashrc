@@ -139,5 +139,5 @@ export PATH=$PATH:~/bin
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
-
+export GOPATH=$HOME/go
 
