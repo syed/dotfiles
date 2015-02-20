@@ -135,6 +135,7 @@ function parse_git_branch {
 
 export EDITOR=vim
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/go/bin
 
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
