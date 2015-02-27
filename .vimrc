@@ -11,7 +11,6 @@ set number
 set laststatus=2
 " airline to use powerline fonts (note: install powerline fonts first)
 " let g:airline_powerline_fonts = 1
-let g:go_fmt_autosave = 0
 " highlight search
 set hlsearch
 " better colors for highlight
