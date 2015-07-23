@@ -143,3 +143,4 @@ export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
 export GOPATH=$HOME/go
 
+export lxcnetes=$HOME/go/src/bitbucket.org/syed1/lxcnetes

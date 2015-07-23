@@ -15,6 +15,8 @@ set laststatus=2
 set hlsearch
 " better colors for highlight
 hi Search ctermfg=black ctermbg=blue
+map <F5> /<C-r><C-w> <CR> :vim /<C-r><C-w>/g % \| copen <CR>
+
 
 if has("autocmd")
   " Enable file type detection
