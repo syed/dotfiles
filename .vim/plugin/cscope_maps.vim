@@ -122,14 +122,27 @@ if has("cscope")
     " (Note: you may wish to put a 'set splitright' in your .vimrc
     " if you prefer the new window on the right instead of the left
 
-    nmap <C-@><C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>   
-    nmap <C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR> 
-    nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>s :tab scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>g :tab scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>c :tab scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>t :tab scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>e :tab scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@>f :tab scs find f <C-R>=expand("<cfile>")<CR><CR>   
+    nmap <C-@><C-@>i :tab scs find i ^<C-R>=expand("<cfile>")<CR>$<CR> 
+    nmap <C-@><C-@>d :tab scs find d <C-R>=expand("<cword>")<CR><CR>
+
+
+    nmap <C-@><C-@><C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@><C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@><C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@><C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@><C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@><C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>   
+    nmap <C-@><C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR> 
+    nmap <C-@><C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
+
+
+ 
 
 
     """"""""""""" key map timeouts
