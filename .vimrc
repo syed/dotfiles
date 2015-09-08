@@ -34,4 +34,6 @@ if has("autocmd")
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+  autocmd BufNewFile,BufRead *.tex setlocal spell
 endif
