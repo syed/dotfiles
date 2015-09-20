@@ -35,5 +35,10 @@ if has("autocmd")
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
 
+  " Spell check
   autocmd BufNewFile,BufRead *.tex setlocal spell
+  hi clear SpellBad
+  hi SpellBad cterm=underline
+
+
 endif
