@@ -144,3 +144,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/go
 
 export lxcnetes=$HOME/go/src/bitbucket.org/syed1/lxcnetes
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/syed/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/syed/google-cloud-sdk/completion.bash.inc'
