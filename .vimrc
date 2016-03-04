@@ -40,7 +40,7 @@ if has("autocmd")
   hi clear SpellBad
   hi SpellBad cterm=underline
 
-  let g:gofmt_command = ‘goimports‘
+  let g:gofmt_command = 'goimports'
   autocmd BufWritePre *.go Fmt
 
 
