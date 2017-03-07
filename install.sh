@@ -7,3 +7,4 @@ ln -s $PWD/.screenrc  ~/.screenrc
 ln -s $PWD/.vimrc ~/.vimrc
 ln -s $PWD/.vim/ ~/.vim
 ln -s $PWD/bin ~/bin 
+ln -s $PWD/.tmux.conf ~/.tmux.conf
