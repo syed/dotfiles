@@ -17,6 +17,11 @@ set hlsearch
 hi Search ctermfg=black ctermbg=blue
 map <F5> /<C-r><C-w> <CR> :vim /<C-r><C-w>/g % \| copen <CR>
 
+" Visual search copy to system clipboard
+vmap Y "+y
+
+" Translate text https://github.com/soimort/translate-shell
+vmap T y:cexpr system('trans -no-ansi "<C-R>""') \| copen <CR>
 
 if has("autocmd")
   " Enable file type detection
@@ -41,7 +46,7 @@ if has("autocmd")
   hi SpellBad cterm=underline
 
   let g:gofmt_command = 'goimports'
-  autocmd BufWritePre *.go Fmt
+  " autocmd BufWritePre *.go Fmt
 
 
 endif

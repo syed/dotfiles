@@ -145,10 +145,14 @@ export GOPATH=$HOME/go
 
 export lxcnetes=$HOME/go/src/bitbucket.org/syed1/lxcnetes
 
-<<<<<<< HEAD
 export NVM_DIR="/home/syed/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ANDROID_HOME=/home/syed/Android/Sdk/
 export PATH="/usr/lib/ccache:$PATH"
 export IBUS_ENABLE_SYNC_MODE=1
 
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
