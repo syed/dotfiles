@@ -135,24 +135,31 @@ function parse_git_branch {
 
 export EDITOR=vim
 export PATH=$PATH:~/bin
-export PATH=$PATH:~/go/bin
 export PYTHONPATH=$PYTHONPATH:/$HOME/multi-cloud-analysis
 
 #python virtual envs
 export WORKON_HOME=$HOME/.virtualenvs
 #source /usr/local/bin/virtualenvwrapper.sh
-export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin
 
 export lxcnetes=$HOME/go/src/bitbucket.org/syed1/lxcnetes
 
-export NVM_DIR="/home/syed/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-ANDROID_HOME=/home/syed/Android/Sdk/
 export PATH="/usr/lib/ccache:$PATH"
 export IBUS_ENABLE_SYNC_MODE=1
-
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+# The next line updates PATH for the Google Cloud SDK.
+[ -s '/home/syed/google-cloud-sdk/path.bash.inc' ] && source '/home/syed/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+[ -s '/home/syed/google-cloud-sdk/completion.bash.inc' ] && source '/home/syed/google-cloud-sdk/completion.bash.inc'
+
+export CATALINA_HOME=~/work/apache-tomcat-6.0.33
+export CATALINA_BASE=~/work/apache-tomcat-6.0.33
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
+
+[ -d "$HOME/.jenv" ] && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv init -)"
