@@ -150,6 +150,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -163,3 +164,5 @@ export CATALINA_BASE=~/work/apache-tomcat-6.0.33
 export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=500m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
 
 [ -d "$HOME/.jenv" ] && export PATH="$HOME/.jenv/bin:$PATH" && eval "$(jenv init -)"
+[[ $(which kubectl) ]] && source <(kubectl completion bash)
+PATH="$PATH:/home/syed/.mos/bin"
