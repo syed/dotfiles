@@ -5,7 +5,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'scrooloose/nerdtree.git'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-surround'
 
@@ -17,6 +16,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'skammer/vim-css-color'      
 Plugin 'hail2u/vim-css3-syntax'     
 Plugin 'digitaltoad/vim-jade' 
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 
@@ -75,10 +75,6 @@ if has("autocmd")
   hi SpellBad cterm=underline
 endif
 
-" start NERDTree on start-up and focus active window
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-
 " map FuzzyFinder
 noremap <leader>b :FufBuffer<cr>
 noremap <leader>f :FufFile<cr>
@@ -89,8 +85,3 @@ let g:user_emmet_leader_key = '<c-e>'
 " run JSHint when a file with .js extension is saved
 " this requires the jsHint2 plugin
 autocmd BufWritePost *.js silent :JSHint
-
-" make a mark for column 80
-set colorcolumn=80
-" and set the mark color to DarkSlateGray
-highlight ColorColumn ctermbg=lightgray guibg=lightgray
