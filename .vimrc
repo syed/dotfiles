@@ -85,3 +85,6 @@ let g:user_emmet_leader_key = '<c-e>'
 " run JSHint when a file with .js extension is saved
 " this requires the jsHint2 plugin
 autocmd BufWritePost *.js silent :JSHint
+
+" Supress vim-go warning
+let g:go_version_warning = 0
