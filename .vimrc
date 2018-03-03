@@ -17,6 +17,7 @@ Plugin 'skammer/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'     
 Plugin 'digitaltoad/vim-jade' 
 Plugin 'fatih/vim-go'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 
