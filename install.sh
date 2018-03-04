@@ -1,8 +1,10 @@
 #!/bin/bash
 if [ -n "$(command -v yum)" ]; then
 	PKGMGR=yum
+        OSTYPE=redhat
 elif [ -n "$(command -v apt-get)" ]; then
 	PKGMGR=apt-get
+        OSTYPE=debian
 fi
 
 setup_vim(){
@@ -26,8 +28,8 @@ setup_tmux(){
 
 setup_shell(){
         ln -s $PWD/.bashrc ~/.bashrc 
-	rm ~/bin
         ln -s $PWD/bin ~/bin 
+	sudo $PKGMGR install -y bash-completion
 }
 
 setup_other(){
@@ -36,11 +38,11 @@ setup_other(){
 }
 
 cleanup(){
-	rm -rf ~/.vim/bundle
         rm -f ~/.vim ~/.vimrc
         rm -f ~/.bashrc ~/.screenrc 
         rm -f ~/.gitignore ~/.gitconfig
         rm -f ~/.tmux.conf
+	rm -f ~/bin
 }
 
 cleanup
@@ -48,3 +50,4 @@ setup_vim
 setup_screen
 setup_tmux
 setup_shell
+setup_other
