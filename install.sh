@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 if [ -n "$(command -v yum)" ]; then
 	PKGMGR=yum
         OSTYPE=redhat
@@ -51,3 +52,4 @@ setup_screen
 setup_tmux
 setup_shell
 setup_other
+echo "DONE"

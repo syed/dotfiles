@@ -89,3 +89,6 @@ autocmd BufWritePost *.js silent :JSHint
 
 " Supress vim-go warning
 let g:go_version_warning = 0
+
+" Golang
+let g:go_fmt_command = "goimports"
